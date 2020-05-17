@@ -12,7 +12,7 @@ import (
 	"github.com/demonoid81/moby/daemon/network"
 	"github.com/demonoid81/moby/pkg/containerfs"
 	"github.com/demonoid81/moby/pkg/idtools"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )

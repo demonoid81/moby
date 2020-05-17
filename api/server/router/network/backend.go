@@ -6,7 +6,7 @@ import (
 	"github.com/demonoid81/moby/api/types"
 	"github.com/demonoid81/moby/api/types/filters"
 	"github.com/demonoid81/moby/api/types/network"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 )
 
 // Backend is all the methods that need to be implemented

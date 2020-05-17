@@ -19,9 +19,9 @@ import (
 	networkSettings "github.com/demonoid81/moby/daemon/network"
 	"github.com/demonoid81/moby/plugin"
 	volumeopts "github.com/demonoid81/moby/volume/service/opts"
-	"github.com/docker/libnetwork"
-	"github.com/docker/libnetwork/cluster"
-	networktypes "github.com/docker/libnetwork/types"
+	"github.com/demonoid81/libnetwork"
+	"github.com/demonoid81/libnetwork/cluster"
+	networktypes "github.com/demonoid81/libnetwork/types"
 	"github.com/docker/swarmkit/agent/exec"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )

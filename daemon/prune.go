@@ -12,7 +12,7 @@ import (
 	timetypes "github.com/demonoid81/moby/api/types/time"
 	"github.com/demonoid81/moby/errdefs"
 	"github.com/demonoid81/moby/runconfig"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

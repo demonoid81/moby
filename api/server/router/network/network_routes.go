@@ -14,8 +14,8 @@ import (
 	"github.com/demonoid81/moby/api/types/network"
 	"github.com/demonoid81/moby/api/types/versions"
 	"github.com/demonoid81/moby/errdefs"
-	"github.com/docker/libnetwork"
-	netconst "github.com/docker/libnetwork/datastore"
+	"github.com/demonoid81/libnetwork"
+	netconst "github.com/demonoid81/libnetwork/datastore"
 	"github.com/pkg/errors"
 )
 

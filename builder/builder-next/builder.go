@@ -20,7 +20,7 @@ import (
 	"github.com/demonoid81/moby/pkg/idtools"
 	"github.com/demonoid81/moby/pkg/streamformatter"
 	"github.com/demonoid81/moby/pkg/system"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	controlapi "github.com/moby/buildkit/api/services/control"
 	"github.com/moby/buildkit/client"
 	"github.com/moby/buildkit/control"

@@ -10,7 +10,7 @@ import (
 	"github.com/demonoid81/moby/api/types/filters"
 	"github.com/demonoid81/moby/container"
 	daemonevents "github.com/demonoid81/moby/daemon/events"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	swarmapi "github.com/docker/swarmkit/api"
 	gogotypes "github.com/gogo/protobuf/types"
 	"github.com/sirupsen/logrus"

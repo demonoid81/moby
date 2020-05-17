@@ -5,7 +5,7 @@ import (
 
 	dockercontainer "github.com/demonoid81/moby/container"
 	"github.com/demonoid81/moby/errdefs"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

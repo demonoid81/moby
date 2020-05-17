@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/demonoid81/moby/daemon/config"
-	"github.com/docker/libnetwork/resolvconf"
+	"github.com/demonoid81/libnetwork/resolvconf"
 	"github.com/moby/sys/mount"
 	"github.com/moby/sys/mountinfo"
 	"github.com/pkg/errors"

@@ -12,7 +12,7 @@ import (
 	"github.com/demonoid81/moby/pkg/discovery"
 	_ "github.com/demonoid81/moby/pkg/discovery/memory"
 	"github.com/demonoid81/moby/registry"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/sirupsen/logrus"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

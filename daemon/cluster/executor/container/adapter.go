@@ -21,7 +21,7 @@ import (
 	"github.com/demonoid81/moby/daemon/cluster/convert"
 	executorpkg "github.com/demonoid81/moby/daemon/cluster/executor"
 	volumeopts "github.com/demonoid81/moby/volume/service/opts"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/log"

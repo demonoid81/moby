@@ -54,7 +54,7 @@ import (
 	"github.com/demonoid81/moby/daemon/cluster/controllers/plugin"
 	executorpkg "github.com/demonoid81/moby/daemon/cluster/executor"
 	"github.com/demonoid81/moby/pkg/signal"
-	lncluster "github.com/docker/libnetwork/cluster"
+	lncluster "github.com/demonoid81/libnetwork/cluster"
 	swarmapi "github.com/docker/swarmkit/api"
 	swarmnode "github.com/docker/swarmkit/node"
 	"github.com/pkg/errors"

@@ -21,7 +21,7 @@ import (
 	executorpkg "github.com/demonoid81/moby/daemon/cluster/executor"
 	clustertypes "github.com/demonoid81/moby/daemon/cluster/provider"
 	"github.com/docker/go-connections/nat"
-	netconst "github.com/docker/libnetwork/datastore"
+	netconst "github.com/demonoid81/libnetwork/datastore"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/api/genericresource"

@@ -12,7 +12,7 @@ import (
 	"github.com/demonoid81/moby/api/types/events"
 	executorpkg "github.com/demonoid81/moby/daemon/cluster/executor"
 	"github.com/docker/go-connections/nat"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/log"

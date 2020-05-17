@@ -6,7 +6,7 @@ import (
 	basictypes "github.com/demonoid81/moby/api/types"
 	networktypes "github.com/demonoid81/moby/api/types/network"
 	types "github.com/demonoid81/moby/api/types/swarm"
-	netconst "github.com/docker/libnetwork/datastore"
+	netconst "github.com/demonoid81/libnetwork/datastore"
 	swarmapi "github.com/docker/swarmkit/api"
 	gogotypes "github.com/gogo/protobuf/types"
 )

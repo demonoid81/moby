@@ -18,7 +18,7 @@ import (
 	"github.com/demonoid81/moby/pkg/stringid"
 	"github.com/demonoid81/moby/pkg/system"
 	"github.com/demonoid81/moby/runconfig"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/moby/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"

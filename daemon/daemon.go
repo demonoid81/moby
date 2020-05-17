@@ -65,9 +65,9 @@ import (
 	"github.com/demonoid81/moby/registry"
 	"github.com/demonoid81/moby/runconfig"
 	volumesservice "github.com/demonoid81/moby/volume/service"
-	"github.com/docker/libnetwork"
-	"github.com/docker/libnetwork/cluster"
-	nwconfig "github.com/docker/libnetwork/config"
+	"github.com/demonoid81/libnetwork"
+	"github.com/demonoid81/libnetwork/cluster"
+	nwconfig "github.com/demonoid81/libnetwork/config"
 	"github.com/pkg/errors"
 	"golang.org/x/sync/semaphore"
 )

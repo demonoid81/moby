@@ -15,7 +15,7 @@ import (
 	"github.com/demonoid81/moby/pkg/truncindex"
 	volumesservice "github.com/demonoid81/moby/volume/service"
 	"github.com/docker/go-connections/nat"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/pkg/errors"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

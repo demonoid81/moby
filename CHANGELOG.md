@@ -153,11 +153,11 @@ be found.
 * Check parameter `--ip`, `--ip6` and `--link-local-ip` in `docker network connect` [#30807](https://github.com/demonoid81/moby/pull/30807)
 + Added support for `dns-search` [#30117](https://github.com/demonoid81/moby/pull/30117)
 + Added --verbose option for docker network inspect to show task details from all swarm nodes [#31710](https://github.com/demonoid81/moby/pull/31710)
-* Clear stale datapath encryption states when joining the cluster [docker/libnetwork#1354](https://github.com/docker/libnetwork/pull/1354)
-+ Ensure iptables initialization only happens once [docker/libnetwork#1676](https://github.com/docker/libnetwork/pull/1676)
-* Fix bad order of iptables filter rules [docker/libnetwork#961](https://github.com/docker/libnetwork/pull/961)
-+ Add anonymous container alias to service record on attachable network [docker/libnetwork#1651](https://github.com/docker/libnetwork/pull/1651)
-+ Support for `com.docker.network.container_interface_prefix` driver label [docker/libnetwork#1667](https://github.com/docker/libnetwork/pull/1667)
+* Clear stale datapath encryption states when joining the cluster [docker/libnetwork#1354](https://github.com/demonoid81/libnetwork/pull/1354)
++ Ensure iptables initialization only happens once [docker/libnetwork#1676](https://github.com/demonoid81/libnetwork/pull/1676)
+* Fix bad order of iptables filter rules [docker/libnetwork#961](https://github.com/demonoid81/libnetwork/pull/961)
++ Add anonymous container alias to service record on attachable network [docker/libnetwork#1651](https://github.com/demonoid81/libnetwork/pull/1651)
++ Support for `com.docker.network.container_interface_prefix` driver label [docker/libnetwork#1667](https://github.com/demonoid81/libnetwork/pull/1667)
 + Improve network list performance by omitting network details that are not used [#30673](https://github.com/demonoid81/moby/pull/30673)
 
 ### Runtime
@@ -253,7 +253,7 @@ Upgrading from Docker 1.13.1 to 17.03.0 is expected to be simple and low-risk.
 
 * Fix bug on overlay encryption keys rotation in cross-datacenter swarm [#30727](https://github.com/demonoid81/moby/pull/30727)
 * Fix side effect panic in overlay encryption and network control plane communication failure ("No installed keys could decrypt the message") on frequent swarm leader re-election [#25608](https://github.com/demonoid81/moby/pull/25608)
-* Several fixes around system responsiveness and datapath programming when using overlay network with external kv-store [docker/libnetwork#1639](https://github.com/docker/libnetwork/pull/1639), [docker/libnetwork#1632](https://github.com/docker/libnetwork/pull/1632) and more...
+* Several fixes around system responsiveness and datapath programming when using overlay network with external kv-store [docker/libnetwork#1639](https://github.com/demonoid81/libnetwork/pull/1639), [docker/libnetwork#1632](https://github.com/demonoid81/libnetwork/pull/1632) and more...
 * Discard incoming plain vxlan packets for encrypted overlay network [#31170](https://github.com/demonoid81/moby/pull/31170)
 * Release the network attachment on allocation failure [#31073](https://github.com/demonoid81/moby/pull/31073)
 * Fix port allocation when multiple published ports map to the same target port [docker/swarmkit#1835](https://github.com/docker/swarmkit/pull/1835)
@@ -760,17 +760,17 @@ systemctl restart docker` to reload changes and (re)start the docker daemon.
 ### Networking
 
 * Update libnetwork [#29004](https://github.com/demonoid81/moby/pull/29004) [#29146](https://github.com/demonoid81/moby/pull/29146)
-  - Fix panic in embedded DNS [docker/libnetwork#1561](https://github.com/docker/libnetwork/pull/1561)
-  - Fix unmarhalling panic when passing --link-local-ip on global scope network [docker/libnetwork#1564](https://github.com/docker/libnetwork/pull/1564)
-  - Fix panic when network plugin returns nil StaticRoutes [docker/libnetwork#1563](https://github.com/docker/libnetwork/pull/1563)
-  - Fix panic in osl.(*networkNamespace).DeleteNeighbor [docker/libnetwork#1555](https://github.com/docker/libnetwork/pull/1555)
-  - Fix panic in swarm networking concurrent map read/write [docker/libnetwork#1570](https://github.com/docker/libnetwork/pull/1570)
-  * Allow encrypted networks when running docker inside a container [docker/libnetwork#1502](https://github.com/docker/libnetwork/pull/1502)
-  - Do not block autoallocation of IPv6 pool [docker/libnetwork#1538](https://github.com/docker/libnetwork/pull/1538)
-  - Set timeout for netlink calls [docker/libnetwork#1557](https://github.com/docker/libnetwork/pull/1557)
+  - Fix panic in embedded DNS [docker/libnetwork#1561](https://github.com/demonoid81/libnetwork/pull/1561)
+  - Fix unmarhalling panic when passing --link-local-ip on global scope network [docker/libnetwork#1564](https://github.com/demonoid81/libnetwork/pull/1564)
+  - Fix panic when network plugin returns nil StaticRoutes [docker/libnetwork#1563](https://github.com/demonoid81/libnetwork/pull/1563)
+  - Fix panic in osl.(*networkNamespace).DeleteNeighbor [docker/libnetwork#1555](https://github.com/demonoid81/libnetwork/pull/1555)
+  - Fix panic in swarm networking concurrent map read/write [docker/libnetwork#1570](https://github.com/demonoid81/libnetwork/pull/1570)
+  * Allow encrypted networks when running docker inside a container [docker/libnetwork#1502](https://github.com/demonoid81/libnetwork/pull/1502)
+  - Do not block autoallocation of IPv6 pool [docker/libnetwork#1538](https://github.com/demonoid81/libnetwork/pull/1538)
+  - Set timeout for netlink calls [docker/libnetwork#1557](https://github.com/demonoid81/libnetwork/pull/1557)
   - Increase networking local store timeout to one minute [docker/libkv#140](https://github.com/docker/libkv/pull/140)
-  - Fix a panic in libnetwork.(*sandbox).execFunc [docker/libnetwork#1556](https://github.com/docker/libnetwork/pull/1556)
-  - Honor icc=false for internal networks [docker/libnetwork#1525](https://github.com/docker/libnetwork/pull/1525)
+  - Fix a panic in libnetwork.(*sandbox).execFunc [docker/libnetwork#1556](https://github.com/demonoid81/libnetwork/pull/1556)
+  - Honor icc=false for internal networks [docker/libnetwork#1525](https://github.com/demonoid81/libnetwork/pull/1525)
 
 ### Logging
 
@@ -834,11 +834,11 @@ systemctl restart docker` to reload changes and (re)start the docker daemon.
 ### Networking
 
 * Update libnetwork [#27559](https://github.com/demonoid81/moby/pull/27559)
- - Fix race in serializing sandbox to string [docker/libnetwork#1495](https://github.com/docker/libnetwork/pull/1495)
- - Fix race during deletion [docker/libnetwork#1503](https://github.com/docker/libnetwork/pull/1503)
- * Reset endpoint port info on connectivity revoke in bridge driver [docker/libnetwork#1504](https://github.com/docker/libnetwork/pull/1504)
- - Fix a deadlock in networking code [docker/libnetwork#1507](https://github.com/docker/libnetwork/pull/1507)
- - Fix a race in load balancer state [docker/libnetwork#1512](https://github.com/docker/libnetwork/pull/1512)
+ - Fix race in serializing sandbox to string [docker/libnetwork#1495](https://github.com/demonoid81/libnetwork/pull/1495)
+ - Fix race during deletion [docker/libnetwork#1503](https://github.com/demonoid81/libnetwork/pull/1503)
+ * Reset endpoint port info on connectivity revoke in bridge driver [docker/libnetwork#1504](https://github.com/demonoid81/libnetwork/pull/1504)
+ - Fix a deadlock in networking code [docker/libnetwork#1507](https://github.com/demonoid81/libnetwork/pull/1507)
+ - Fix a race in load balancer state [docker/libnetwork#1512](https://github.com/demonoid81/libnetwork/pull/1512)
 
 ### Logging
 
@@ -893,14 +893,14 @@ systemctl restart docker` to reload changes and (re)start the docker daemon.
 
 - Fix a daemon start panic on armv5 [#24315](https://github.com/demonoid81/moby/issues/24315)
 * Vendor libnetwork [#26879](https://github.com/demonoid81/moby/pull/26879) [#26953](https://github.com/demonoid81/moby/pull/26953)
- * Avoid returning early on agent join failures [docker/libnetwork#1473](https://github.com/docker/libnetwork/pull/1473)
- - Fix service published port cleanup issues [docker/libetwork#1432](https://github.com/docker/libnetwork/pull/1432) [docker/libnetwork#1433](https://github.com/docker/libnetwork/pull/1433)
- * Recover properly from transient gossip failures [docker/libnetwork#1446](https://github.com/docker/libnetwork/pull/1446)
- * Disambiguate node names known to gossip cluster to avoid node name collision [docker/libnetwork#1451](https://github.com/docker/libnetwork/pull/1451)
- * Honor user provided listen address for gossip  [docker/libnetwork#1460](https://github.com/docker/libnetwork/pull/1460)
- * Allow reachability via published port across services on the same host [docker/libnetwork#1398](https://github.com/docker/libnetwork/pull/1398)
- * Change the ingress sandbox name from random id to just `ingress_sbox` [docker/libnetwork#1449](https://github.com/docker/libnetwork/pull/1449)
- - Disable service discovery in ingress network [docker/libnetwork#1489](https://github.com/docker/libnetwork/pull/1489)
+ * Avoid returning early on agent join failures [docker/libnetwork#1473](https://github.com/demonoid81/libnetwork/pull/1473)
+ - Fix service published port cleanup issues [docker/libetwork#1432](https://github.com/demonoid81/libnetwork/pull/1432) [docker/libnetwork#1433](https://github.com/demonoid81/libnetwork/pull/1433)
+ * Recover properly from transient gossip failures [docker/libnetwork#1446](https://github.com/demonoid81/libnetwork/pull/1446)
+ * Disambiguate node names known to gossip cluster to avoid node name collision [docker/libnetwork#1451](https://github.com/demonoid81/libnetwork/pull/1451)
+ * Honor user provided listen address for gossip  [docker/libnetwork#1460](https://github.com/demonoid81/libnetwork/pull/1460)
+ * Allow reachability via published port across services on the same host [docker/libnetwork#1398](https://github.com/demonoid81/libnetwork/pull/1398)
+ * Change the ingress sandbox name from random id to just `ingress_sbox` [docker/libnetwork#1449](https://github.com/demonoid81/libnetwork/pull/1449)
+ - Disable service discovery in ingress network [docker/libnetwork#1489](https://github.com/demonoid81/libnetwork/pull/1489)
 
 ### Swarm Mode
 

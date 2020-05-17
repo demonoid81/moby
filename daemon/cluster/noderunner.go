@@ -10,7 +10,7 @@ import (
 
 	types "github.com/demonoid81/moby/api/types/swarm"
 	"github.com/demonoid81/moby/daemon/cluster/executor/container"
-	lncluster "github.com/docker/libnetwork/cluster"
+	lncluster "github.com/demonoid81/libnetwork/cluster"
 	swarmapi "github.com/docker/swarmkit/api"
 	swarmallocator "github.com/docker/swarmkit/manager/allocator/cnmallocator"
 	swarmnode "github.com/docker/swarmkit/node"

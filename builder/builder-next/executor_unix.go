@@ -11,7 +11,7 @@ import (
 	"github.com/demonoid81/moby/daemon/config"
 	"github.com/demonoid81/moby/pkg/idtools"
 	"github.com/demonoid81/moby/pkg/stringid"
-	"github.com/docker/libnetwork"
+	"github.com/demonoid81/libnetwork"
 	"github.com/moby/buildkit/executor"
 	"github.com/moby/buildkit/executor/oci"
 	"github.com/moby/buildkit/executor/runcexecutor"

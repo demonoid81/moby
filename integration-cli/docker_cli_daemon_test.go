@@ -34,7 +34,7 @@ import (
 	"github.com/demonoid81/moby/opts"
 	testdaemon "github.com/demonoid81/moby/testutil/daemon"
 	units "github.com/docker/go-units"
-	"github.com/docker/libnetwork/iptables"
+	"github.com/demonoid81/libnetwork/iptables"
 	"github.com/docker/libtrust"
 	"github.com/moby/sys/mount"
 	"golang.org/x/sys/unix"

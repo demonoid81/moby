@@ -17,7 +17,7 @@ import (
 	"github.com/demonoid81/moby/daemon/config"
 	"github.com/demonoid81/moby/libcontainerd/supervisor"
 	"github.com/demonoid81/moby/pkg/homedir"
-	"github.com/docker/libnetwork/portallocator"
+	"github.com/demonoid81/libnetwork/portallocator"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"

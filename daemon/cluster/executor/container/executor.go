@@ -15,7 +15,7 @@ import (
 	"github.com/demonoid81/moby/daemon/cluster/convert"
 	executorpkg "github.com/demonoid81/moby/daemon/cluster/executor"
 	clustertypes "github.com/demonoid81/moby/daemon/cluster/provider"
-	networktypes "github.com/docker/libnetwork/types"
+	networktypes "github.com/demonoid81/libnetwork/types"
 	"github.com/docker/swarmkit/agent"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
