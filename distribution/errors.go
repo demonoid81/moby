@@ -1,4 +1,4 @@
-package distribution // import "github.com/docker/docker/distribution"
+package distribution // import "github.com/demonoid81/moby/distribution"
 
 import (
 	"fmt"
@@ -12,8 +12,8 @@ import (
 	v2 "github.com/docker/distribution/registry/api/v2"
 	"github.com/docker/distribution/registry/client"
 	"github.com/docker/distribution/registry/client/auth"
-	"github.com/docker/docker/distribution/xfer"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/distribution/xfer"
+	"github.com/demonoid81/moby/errdefs"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

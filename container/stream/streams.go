@@ -1,4 +1,4 @@
-package stream // import "github.com/docker/docker/container/stream"
+package stream // import "github.com/demonoid81/moby/container/stream"
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 	"sync"
 
 	"github.com/containerd/containerd/cio"
-	"github.com/docker/docker/pkg/broadcaster"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/pools"
+	"github.com/demonoid81/moby/pkg/broadcaster"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/pools"
 	"github.com/sirupsen/logrus"
 )
 

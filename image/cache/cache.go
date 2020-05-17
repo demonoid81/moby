@@ -1,4 +1,4 @@
-package cache // import "github.com/docker/docker/image/cache"
+package cache // import "github.com/demonoid81/moby/image/cache"
 
 import (
 	"encoding/json"
@@ -6,10 +6,10 @@ import (
 	"reflect"
 	"strings"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/dockerversion"
+	"github.com/demonoid81/moby/image"
+	"github.com/demonoid81/moby/layer"
 	"github.com/pkg/errors"
 )
 

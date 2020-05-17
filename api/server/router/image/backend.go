@@ -1,13 +1,13 @@
-package image // import "github.com/docker/docker/api/server/router/image"
+package image // import "github.com/demonoid81/moby/api/server/router/image"
 
 import (
 	"context"
 	"io"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/image"
-	"github.com/docker/docker/api/types/registry"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	"github.com/demonoid81/moby/api/types/image"
+	"github.com/demonoid81/moby/api/types/registry"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

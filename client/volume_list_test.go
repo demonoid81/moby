@@ -1,4 +1,4 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"bytes"
@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	volumetypes "github.com/demonoid81/moby/api/types/volume"
+	"github.com/demonoid81/moby/errdefs"
 )
 
 func TestVolumeListError(t *testing.T) {

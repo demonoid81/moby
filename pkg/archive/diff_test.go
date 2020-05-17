@@ -1,4 +1,4 @@
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/demonoid81/moby/pkg/archive"
 
 import (
 	"archive/tar"
@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/ioutils"
 )
 
 func TestApplyLayerInvalidFilenames(t *testing.T) {

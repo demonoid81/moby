@@ -1,4 +1,4 @@
-package server // import "github.com/docker/docker/api/server"
+package server // import "github.com/demonoid81/moby/api/server"
 
 import (
 	"context"
@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/server/middleware"
-	"github.com/docker/docker/api/server/router"
-	"github.com/docker/docker/api/server/router/debug"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/server/httputils"
+	"github.com/demonoid81/moby/api/server/middleware"
+	"github.com/demonoid81/moby/api/server/router"
+	"github.com/demonoid81/moby/api/server/router/debug"
+	"github.com/demonoid81/moby/dockerversion"
+	"github.com/demonoid81/moby/errdefs"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 )

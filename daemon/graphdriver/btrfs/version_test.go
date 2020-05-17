@@ -1,6 +1,6 @@
 // +build linux
 
-package btrfs // import "github.com/docker/docker/daemon/graphdriver/btrfs"
+package btrfs // import "github.com/demonoid81/moby/daemon/graphdriver/btrfs"
 
 import (
 	"testing"

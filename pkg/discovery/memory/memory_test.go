@@ -1,10 +1,10 @@
-package memory // import "github.com/docker/docker/pkg/discovery/memory"
+package memory // import "github.com/demonoid81/moby/pkg/discovery/memory"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/internal/test/suite"
-	"github.com/docker/docker/pkg/discovery"
+	"github.com/demonoid81/moby/internal/test/suite"
+	"github.com/demonoid81/moby/pkg/discovery"
 	"gotest.tools/v3/assert"
 )
 

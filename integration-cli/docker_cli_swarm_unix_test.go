@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/integration-cli/checker"
+	"github.com/demonoid81/moby/api/types/swarm"
+	"github.com/demonoid81/moby/integration-cli/checker"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/poll"
 )

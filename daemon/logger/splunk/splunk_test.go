@@ -1,4 +1,4 @@
-package splunk // import "github.com/docker/docker/daemon/logger/splunk"
+package splunk // import "github.com/demonoid81/moby/daemon/logger/splunk"
 
 import (
 	"compress/gzip"
@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
+	"github.com/demonoid81/moby/daemon/logger"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/env"
 )

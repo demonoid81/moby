@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/testutil/fakecontext"
-	"github.com/docker/docker/testutil/fakegit"
-	"github.com/docker/docker/testutil/fakestorage"
-	"github.com/docker/docker/testutil/request"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/testutil/fakecontext"
+	"github.com/demonoid81/moby/testutil/fakegit"
+	"github.com/demonoid81/moby/testutil/fakestorage"
+	"github.com/demonoid81/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 )

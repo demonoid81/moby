@@ -11,8 +11,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/client"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/client"
 )
 
 func main() {
@@ -32,4 +32,4 @@ func main() {
 }
 ```
 
-[Full documentation is available on GoDoc.](https://godoc.org/github.com/docker/docker/client)
+[Full documentation is available on GoDoc.](https://godoc.org/github.com/demonoid81/moby/client)

@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"fmt"
@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/backend"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/builder/dockerfile"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/types/backend"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/builder/dockerfile"
+	"github.com/demonoid81/moby/errdefs"
 	"github.com/pkg/errors"
 )
 

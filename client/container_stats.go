@@ -1,10 +1,10 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
 	"net/url"
 
-	"github.com/docker/docker/api/types"
+	"github.com/demonoid81/moby/api/types"
 )
 
 // ContainerStats returns near realtime stats for a given container.

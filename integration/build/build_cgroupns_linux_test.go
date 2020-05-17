@@ -1,4 +1,4 @@
-package build // import "github.com/docker/docker/integration/build"
+package build // import "github.com/demonoid81/moby/integration/build"
 
 import (
 	"context"
@@ -7,11 +7,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration/internal/requirement"
-	"github.com/docker/docker/pkg/jsonmessage"
-	"github.com/docker/docker/testutil/daemon"
-	"github.com/docker/docker/testutil/fakecontext"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/integration/internal/requirement"
+	"github.com/demonoid81/moby/pkg/jsonmessage"
+	"github.com/demonoid81/moby/testutil/daemon"
+	"github.com/demonoid81/moby/testutil/fakecontext"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

@@ -5,10 +5,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/client"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/api/types/network"
+	"github.com/demonoid81/moby/client"
 	"gotest.tools/v3/assert"
 )
 

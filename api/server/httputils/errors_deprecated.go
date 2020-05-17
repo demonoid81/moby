@@ -1,5 +1,5 @@
-package httputils // import "github.com/docker/docker/api/server/httputils"
-import "github.com/docker/docker/errdefs"
+package httputils // import "github.com/demonoid81/moby/api/server/httputils"
+import "github.com/demonoid81/moby/errdefs"
 
 // GetHTTPErrorStatusCode retrieves status code from error message.
 //

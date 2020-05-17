@@ -1,12 +1,12 @@
-package system // import "github.com/docker/docker/integration/system"
+package system // import "github.com/demonoid81/moby/integration/system"
 
 import (
 	"net/http"
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/testutil/request"
+	"github.com/demonoid81/moby/api/types/versions"
+	"github.com/demonoid81/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

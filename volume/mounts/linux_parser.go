@@ -1,4 +1,4 @@
-package mounts // import "github.com/docker/docker/volume/mounts"
+package mounts // import "github.com/demonoid81/moby/volume/mounts"
 
 import (
 	"errors"
@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/volume"
+	"github.com/demonoid81/moby/api/types/mount"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/volume"
 )
 
 type linuxParser struct {

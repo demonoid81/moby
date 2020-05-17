@@ -1,4 +1,4 @@
-package xfer // import "github.com/docker/docker/distribution/xfer"
+package xfer // import "github.com/demonoid81/moby/distribution/xfer"
 
 import (
 	"bytes"
@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/docker/distribution"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/progress"
+	"github.com/demonoid81/moby/image"
+	"github.com/demonoid81/moby/layer"
+	"github.com/demonoid81/moby/pkg/progress"
 	digest "github.com/opencontainers/go-digest"
 	"gotest.tools/v3/assert"
 )

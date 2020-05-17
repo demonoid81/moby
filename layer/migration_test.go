@@ -1,4 +1,4 @@
-package layer // import "github.com/docker/docker/layer"
+package layer // import "github.com/demonoid81/moby/layer"
 
 import (
 	"bytes"
@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/demonoid81/moby/daemon/graphdriver"
+	"github.com/demonoid81/moby/pkg/stringid"
 	"github.com/vbatts/tar-split/tar/asm"
 	"github.com/vbatts/tar-split/tar/storage"
 )

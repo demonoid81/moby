@@ -1,10 +1,10 @@
 // Package v1p19 provides specific API types for the API version 1, patch 19.
-package v1p19 // import "github.com/docker/docker/api/types/versions/v1p19"
+package v1p19 // import "github.com/demonoid81/moby/api/types/versions/v1p19"
 
 import (
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/versions/v1p20"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/api/types/versions/v1p20"
 	"github.com/docker/go-connections/nat"
 )
 

@@ -1,11 +1,11 @@
-package image // import "github.com/docker/docker/integration/image"
+package image // import "github.com/demonoid81/moby/integration/image"
 
 import (
 	"fmt"
 	"os"
 	"testing"
 
-	"github.com/docker/docker/testutil/environment"
+	"github.com/demonoid81/moby/testutil/environment"
 )
 
 var testEnv *environment.Execution

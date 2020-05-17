@@ -1,11 +1,11 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
 	"net/url"
 	"strconv"
 
-	"github.com/docker/docker/api/types"
+	"github.com/demonoid81/moby/api/types"
 )
 
 // ContainerResize changes the size of the tty for a container.

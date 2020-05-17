@@ -1,13 +1,13 @@
 // +build !windows
 
-package dockerfile // import "github.com/docker/docker/builder/dockerfile"
+package dockerfile // import "github.com/demonoid81/moby/builder/dockerfile"
 
 import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/idtools"
 )
 
 func fixPermissions(source, destination string, identity idtools.Identity, overrideSkip bool) error {

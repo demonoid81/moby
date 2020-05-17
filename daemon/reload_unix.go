@@ -1,13 +1,13 @@
 // +build linux freebsd
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"bytes"
 	"fmt"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/daemon/config"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/daemon/config"
 )
 
 // reloadPlatform updates configuration with platform specific options

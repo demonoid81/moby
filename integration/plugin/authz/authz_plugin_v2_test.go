@@ -1,6 +1,6 @@
 // +build !windows
 
-package authz // import "github.com/docker/docker/integration/plugin/authz"
+package authz // import "github.com/demonoid81/moby/integration/plugin/authz"
 
 import (
 	"context"
@@ -10,12 +10,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration/internal/container"
-	"github.com/docker/docker/integration/internal/requirement"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	volumetypes "github.com/demonoid81/moby/api/types/volume"
+	"github.com/demonoid81/moby/client"
+	"github.com/demonoid81/moby/integration/internal/container"
+	"github.com/demonoid81/moby/integration/internal/requirement"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

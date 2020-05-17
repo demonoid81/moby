@@ -1,6 +1,6 @@
 // +build !windows
 
-package term // import "github.com/docker/docker/pkg/term"
+package term // import "github.com/demonoid81/moby/pkg/term"
 
 import (
 	"github.com/moby/term"

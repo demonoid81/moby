@@ -1,6 +1,6 @@
 // +build !windows
 
-package container // import "github.com/docker/docker/container"
+package container // import "github.com/demonoid81/moby/container"
 
 import (
 	"io/ioutil"
@@ -9,13 +9,13 @@ import (
 	"syscall"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/volume"
-	volumemounts "github.com/docker/docker/volume/mounts"
+	"github.com/demonoid81/moby/api/types"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	mounttypes "github.com/demonoid81/moby/api/types/mount"
+	swarmtypes "github.com/demonoid81/moby/api/types/swarm"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/volume"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
 	"github.com/moby/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"

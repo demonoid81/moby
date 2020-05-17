@@ -1,11 +1,11 @@
-package session // import "github.com/docker/docker/integration/session"
+package session // import "github.com/demonoid81/moby/integration/session"
 
 import (
 	"fmt"
 	"os"
 	"testing"
 
-	"github.com/docker/docker/testutil/environment"
+	"github.com/demonoid81/moby/testutil/environment"
 )
 
 var testEnv *environment.Execution

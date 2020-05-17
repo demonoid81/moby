@@ -1,6 +1,6 @@
 // +build !windows
 
-package homedir // import "github.com/docker/docker/pkg/homedir"
+package homedir // import "github.com/demonoid81/moby/pkg/homedir"
 
 import (
 	"os"

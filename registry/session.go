@@ -1,4 +1,4 @@
-package registry // import "github.com/docker/docker/registry"
+package registry // import "github.com/demonoid81/moby/registry"
 
 import (
 	"bytes"
@@ -20,14 +20,14 @@ import (
 
 	"github.com/docker/distribution/reference"
 	"github.com/docker/distribution/registry/api/errcode"
-	"github.com/docker/docker/api/types"
-	registrytypes "github.com/docker/docker/api/types/registry"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/jsonmessage"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/tarsum"
-	"github.com/docker/docker/registry/resumable"
+	"github.com/demonoid81/moby/api/types"
+	registrytypes "github.com/demonoid81/moby/api/types/registry"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/jsonmessage"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/pkg/tarsum"
+	"github.com/demonoid81/moby/registry/resumable"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

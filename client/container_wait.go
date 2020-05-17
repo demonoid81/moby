@@ -1,12 +1,12 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
 	"encoding/json"
 	"net/url"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/versions"
+	"github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/api/types/versions"
 )
 
 // ContainerWait waits until the specified container is in a certain state

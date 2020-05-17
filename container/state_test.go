@@ -1,11 +1,11 @@
-package container // import "github.com/docker/docker/container"
+package container // import "github.com/demonoid81/moby/container"
 
 import (
 	"context"
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
+	"github.com/demonoid81/moby/api/types"
 )
 
 func TestIsValidHealthString(t *testing.T) {

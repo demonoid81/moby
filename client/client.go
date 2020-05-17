@@ -18,8 +18,8 @@ For example, to list running containers (the equivalent of "docker ps"):
 		"context"
 		"fmt"
 
-		"github.com/docker/docker/api/types"
-		"github.com/docker/docker/client"
+		"github.com/demonoid81/moby/api/types"
+		"github.com/demonoid81/moby/client"
 	)
 
 	func main() {
@@ -39,7 +39,7 @@ For example, to list running containers (the equivalent of "docker ps"):
 	}
 
 */
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
@@ -50,9 +50,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
+	"github.com/demonoid81/moby/api"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/versions"
 	"github.com/docker/go-connections/sockets"
 	"github.com/pkg/errors"
 )

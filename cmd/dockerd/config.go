@@ -3,11 +3,11 @@ package main
 import (
 	"runtime"
 
-	"github.com/docker/docker/daemon"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/plugin/executor/containerd"
-	"github.com/docker/docker/registry"
+	"github.com/demonoid81/moby/daemon"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/opts"
+	"github.com/demonoid81/moby/plugin/executor/containerd"
+	"github.com/demonoid81/moby/registry"
 	"github.com/spf13/pflag"
 )
 

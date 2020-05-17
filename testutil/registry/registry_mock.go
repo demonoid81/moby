@@ -1,4 +1,4 @@
-package registry // import "github.com/docker/docker/testutil/registry"
+package registry // import "github.com/demonoid81/moby/testutil/registry"
 
 import (
 	"net/http"

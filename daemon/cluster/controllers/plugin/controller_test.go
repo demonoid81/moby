@@ -1,4 +1,4 @@
-package plugin // import "github.com/docker/docker/daemon/cluster/controllers/plugin"
+package plugin // import "github.com/demonoid81/moby/daemon/cluster/controllers/plugin"
 
 import (
 	"context"
@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/docker/distribution/reference"
-	enginetypes "github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/swarm/runtime"
-	"github.com/docker/docker/pkg/pubsub"
-	"github.com/docker/docker/plugin"
-	v2 "github.com/docker/docker/plugin/v2"
+	enginetypes "github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/swarm/runtime"
+	"github.com/demonoid81/moby/pkg/pubsub"
+	"github.com/demonoid81/moby/plugin"
+	v2 "github.com/demonoid81/moby/plugin/v2"
 	"github.com/sirupsen/logrus"
 )
 

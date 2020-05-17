@@ -26,13 +26,13 @@ import (
 
 	"github.com/cloudflare/cfssl/helpers"
 	"github.com/creack/pty"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/opts"
-	testdaemon "github.com/docker/docker/testutil/daemon"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/integration-cli/checker"
+	"github.com/demonoid81/moby/integration-cli/cli"
+	"github.com/demonoid81/moby/integration-cli/cli/build"
+	"github.com/demonoid81/moby/integration-cli/daemon"
+	"github.com/demonoid81/moby/opts"
+	testdaemon "github.com/demonoid81/moby/testutil/daemon"
 	units "github.com/docker/go-units"
 	"github.com/docker/libnetwork/iptables"
 	"github.com/docker/libtrust"
@@ -1292,7 +1292,7 @@ func (s *DockerDaemonSuite) TestHTTPSInfo(c *testing.T) {
 }
 
 // TestHTTPSRun connects via two-way authenticated HTTPS to the create, attach, start, and wait endpoints.
-// https://github.com/docker/docker/issues/19280
+// https://github.com/demonoid81/moby/issues/19280
 func (s *DockerDaemonSuite) TestHTTPSRun(c *testing.T) {
 	const (
 		testDaemonHTTPSAddr = "tcp://localhost:4271"
@@ -2585,8 +2585,8 @@ func (s *DockerDaemonSuite) TestDaemonRestartSaveContainerExitCode(c *testing.T)
 	// process itself is PID1, the container does not fail on _startup_ (i.e., `docker-init` starting),
 	// but directly after. The exit code of the container is still 127, but the Error Message is not
 	// captured, so `.State.Error` is empty.
-	// See the discussion on https://github.com/docker/docker/pull/30227#issuecomment-274161426,
-	// and https://github.com/docker/docker/pull/26061#r78054578 for more information.
+	// See the discussion on https://github.com/demonoid81/moby/pull/30227#issuecomment-274161426,
+	// and https://github.com/demonoid81/moby/pull/26061#r78054578 for more information.
 	_, err := s.d.Cmd("run", "--name", containerName, "--init=false", "busybox", "toto")
 	assert.ErrorContains(c, err, "")
 

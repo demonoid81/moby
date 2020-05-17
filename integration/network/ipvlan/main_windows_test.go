@@ -1,1 +1,1 @@
-package ipvlan // import "github.com/docker/docker/integration/network/ipvlan"
+package ipvlan // import "github.com/demonoid81/moby/integration/network/ipvlan"

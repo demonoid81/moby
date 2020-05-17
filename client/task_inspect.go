@@ -1,4 +1,4 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"bytes"
@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/demonoid81/moby/api/types/swarm"
 )
 
 // TaskInspectWithRaw returns the task information and its raw representation..

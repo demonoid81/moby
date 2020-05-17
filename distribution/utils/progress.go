@@ -1,4 +1,4 @@
-package utils // import "github.com/docker/docker/distribution/utils"
+package utils // import "github.com/demonoid81/moby/distribution/utils"
 
 import (
 	"io"
@@ -6,8 +6,8 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/pkg/streamformatter"
+	"github.com/demonoid81/moby/pkg/progress"
+	"github.com/demonoid81/moby/pkg/streamformatter"
 	"github.com/sirupsen/logrus"
 )
 

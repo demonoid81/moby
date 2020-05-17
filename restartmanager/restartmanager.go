@@ -1,4 +1,4 @@
-package restartmanager // import "github.com/docker/docker/restartmanager"
+package restartmanager // import "github.com/demonoid81/moby/restartmanager"
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
+	"github.com/demonoid81/moby/api/types/container"
 )
 
 const (

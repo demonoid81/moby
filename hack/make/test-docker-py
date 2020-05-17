@@ -14,7 +14,7 @@ source hack/make/.integration-test-helpers
 # This option can be used to temporarily skip flaky tests (using the `--deselect`
 # flag) until they are fixed upstream. For example:
 # --deselect=tests/integration/api_container_test.py::AttachContainerTest::test_attach_no_stream
-# TODO re-enable test after https://github.com/docker/docker-py/issues/2513 has been resolved
+# TODO re-enable test after https://github.com/demonoid81/moby-py/issues/2513 has been resolved
 : "${PY_TEST_OPTIONS:=--junitxml=${DEST}/junit-report.xml --deselect=tests/integration/api_container_test.py::AttachContainerTest::test_attach_no_stream}"
 (
 	bundle .integration-daemon-start
@@ -48,7 +48,7 @@ source hack/make/.integration-test-helpers
 			[ -z "${TESTDEBUG}" ] && build_opts="--quiet"
 			[ -f /.dockerenv ] || build_opts="${build_opts} --network=host"
 			# shellcheck disable=SC2086
-			exec docker build ${build_opts} -t "${docker_py_image}" -f tests/Dockerfile "https://github.com/docker/docker-py.git#${DOCKER_PY_COMMIT}"
+			exec docker build ${build_opts} -t "${docker_py_image}" -f tests/Dockerfile "https://github.com/demonoid81/moby-py.git#${DOCKER_PY_COMMIT}"
 		)
 	fi
 

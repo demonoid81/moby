@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/strslice"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	mounttypes "github.com/demonoid81/moby/api/types/mount"
+	networktypes "github.com/demonoid81/moby/api/types/network"
+	"github.com/demonoid81/moby/api/types/strslice"
 	"github.com/docker/go-connections/nat"
 )
 

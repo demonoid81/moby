@@ -1,6 +1,6 @@
 // +build linux,cgo,!static_build,journald
 
-package journald // import "github.com/docker/docker/daemon/logger/journald"
+package journald // import "github.com/demonoid81/moby/daemon/logger/journald"
 
 // #include <sys/types.h>
 // #include <sys/poll.h>
@@ -110,8 +110,8 @@ import (
 	"unsafe"
 
 	"github.com/coreos/go-systemd/v22/journal"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/daemon/logger"
+	"github.com/demonoid81/moby/api/types/backend"
+	"github.com/demonoid81/moby/daemon/logger"
 	"github.com/sirupsen/logrus"
 )
 

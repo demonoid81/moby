@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/containerd/containerd"
-	libcontainerdtypes "github.com/docker/docker/libcontainerd/types"
+	libcontainerdtypes "github.com/demonoid81/moby/libcontainerd/types"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 )
 

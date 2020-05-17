@@ -1,4 +1,4 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/demonoid81/moby/api/types/swarm"
 )
 
 // SwarmUpdate updates the swarm.

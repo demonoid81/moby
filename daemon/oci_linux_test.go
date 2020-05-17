@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"io/ioutil"
@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/daemon/network"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/idtools"
 	"github.com/docker/libnetwork"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

@@ -20,7 +20,7 @@
 //	if err != nil {
 //		return fmt.Errorf("Error looking up volume plugin example: %v", err)
 //	}
-package plugins // import "github.com/docker/docker/pkg/plugins"
+package plugins // import "github.com/demonoid81/moby/pkg/plugins"
 
 import (
 	"errors"

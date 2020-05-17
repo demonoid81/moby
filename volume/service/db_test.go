@@ -1,4 +1,4 @@
-package service // import "github.com/docker/docker/volume/service"
+package service // import "github.com/demonoid81/moby/volume/service"
 
 import (
 	"io/ioutil"

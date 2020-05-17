@@ -1,4 +1,4 @@
-package tarsum // import "github.com/docker/docker/pkg/tarsum"
+package tarsum // import "github.com/demonoid81/moby/pkg/tarsum"
 
 import "testing"
 

@@ -1,15 +1,15 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
 	"fmt"
 	"runtime"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/pkg/stringid"
-	volumemounts "github.com/docker/docker/volume/mounts"
-	volumeopts "github.com/docker/docker/volume/service/opts"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/pkg/stringid"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
+	volumeopts "github.com/demonoid81/moby/volume/service/opts"
 )
 
 // createContainerOSSpecificSettings performs host-OS specific container create functionality

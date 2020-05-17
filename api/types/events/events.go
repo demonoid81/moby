@@ -1,4 +1,4 @@
-package events // import "github.com/docker/docker/api/types/events"
+package events // import "github.com/demonoid81/moby/api/types/events"
 
 const (
 	// ContainerEventType is the event type that containers generate

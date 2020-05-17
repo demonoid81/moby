@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/demonoid81/moby/daemon/images"
 
 import (
 	"context"
@@ -6,15 +6,15 @@ import (
 	"runtime"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/registry"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/backend"
+	"github.com/demonoid81/moby/builder"
+	"github.com/demonoid81/moby/image"
+	"github.com/demonoid81/moby/layer"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/pkg/system"
+	"github.com/demonoid81/moby/registry"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

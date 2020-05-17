@@ -1,6 +1,6 @@
 // +build linux
 
-package overlayutils // import "github.com/docker/docker/daemon/graphdriver/overlayutils"
+package overlayutils // import "github.com/demonoid81/moby/daemon/graphdriver/overlayutils"
 
 import (
 	"crypto/rand"

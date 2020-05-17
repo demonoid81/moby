@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/integration-cli/cli"
+	"github.com/demonoid81/moby/api/types/versions"
+	"github.com/demonoid81/moby/integration-cli/cli"
 	"gotest.tools/v3/assert"
 )
 

@@ -1,6 +1,6 @@
 // +build linux
 
-package overlay2 // import "github.com/docker/docker/daemon/graphdriver/overlay2"
+package overlay2 // import "github.com/demonoid81/moby/daemon/graphdriver/overlay2"
 
 import (
 	"context"
@@ -15,18 +15,18 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/daemon/graphdriver/overlayutils"
-	"github.com/docker/docker/daemon/graphdriver/quota"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/chrootarchive"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/directory"
-	"github.com/docker/docker/pkg/fsutils"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/locker"
-	"github.com/docker/docker/pkg/parsers"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/daemon/graphdriver"
+	"github.com/demonoid81/moby/daemon/graphdriver/overlayutils"
+	"github.com/demonoid81/moby/daemon/graphdriver/quota"
+	"github.com/demonoid81/moby/pkg/archive"
+	"github.com/demonoid81/moby/pkg/chrootarchive"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/directory"
+	"github.com/demonoid81/moby/pkg/fsutils"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/locker"
+	"github.com/demonoid81/moby/pkg/parsers"
+	"github.com/demonoid81/moby/pkg/system"
 	units "github.com/docker/go-units"
 	"github.com/moby/sys/mount"
 	rsystem "github.com/opencontainers/runc/libcontainer/system"

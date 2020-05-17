@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"errors"
@@ -9,14 +9,14 @@ import (
 	"strings"
 	"time"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/runconfig"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	networktypes "github.com/demonoid81/moby/api/types/network"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/network"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/opts"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/runconfig"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/libnetwork"
 	netconst "github.com/docker/libnetwork/datastore"

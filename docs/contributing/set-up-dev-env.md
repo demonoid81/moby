@@ -130,15 +130,15 @@ can take over 15 minutes to complete.
    ```none
    Successfully built 3d872560918e
    Successfully tagged docker-dev:dry-run-test
-   docker run --rm -i --privileged -e BUILDFLAGS -e KEEPBUNDLE -e DOCKER_BUILD_GOGC -e DOCKER_BUILD_PKGS -e DOCKER_CLIENTONLY -e DOCKER_DEBUG -e DOCKER_EXPERIMENTAL -e DOCKER_GITCOMMIT -e DOCKER_GRAPHDRIVER=devicemapper -e DOCKER_REMAP_ROOT -e DOCKER_STORAGE_OPTS -e DOCKER_USERLANDPROXY -e TESTDIRS -e TESTFLAGS -e TIMEOUT -v "home/ubuntu/repos/docker/bundles:/go/src/github.com/docker/docker/bundles" -t "docker-dev:dry-run-test" bash
+   docker run --rm -i --privileged -e BUILDFLAGS -e KEEPBUNDLE -e DOCKER_BUILD_GOGC -e DOCKER_BUILD_PKGS -e DOCKER_CLIENTONLY -e DOCKER_DEBUG -e DOCKER_EXPERIMENTAL -e DOCKER_GITCOMMIT -e DOCKER_GRAPHDRIVER=devicemapper -e DOCKER_REMAP_ROOT -e DOCKER_STORAGE_OPTS -e DOCKER_USERLANDPROXY -e TESTDIRS -e TESTFLAGS -e TIMEOUT -v "home/ubuntu/repos/docker/bundles:/go/src/github.com/demonoid81/moby/bundles" -t "docker-dev:dry-run-test" bash
    #
    ```
 
    At this point, your prompt reflects the container's BASH shell.
 
-5. List the contents of the current directory (`/go/src/github.com/docker/docker`).
+5. List the contents of the current directory (`/go/src/github.com/demonoid81/moby`).
 
-   You should see the image's source from the  `/go/src/github.com/docker/docker`
+   You should see the image's source from the  `/go/src/github.com/demonoid81/moby`
    directory.
 
    ![List example](images/list_example.png)
@@ -213,11 +213,11 @@ can take over 15 minutes to complete.
    `docker` command) has split out from the Moby project and is now maintained in:
    
    * [docker/cli](https://github.com/docker/cli) - The Docker CLI source-code;
-   * [docker/docker-ce](https://github.com/docker/docker-ce) - The Docker CE
+   * [docker/docker-ce](https://github.com/demonoid81/moby-ce) - The Docker CE
      edition project, which assembles engine, CLI and other components.
    
    The Moby project now defaults to a [fixed
-   version](https://github.com/docker/docker-ce/commits/v17.06.0-ce) of the
+   version](https://github.com/demonoid81/moby-ce/commits/v17.06.0-ce) of the
    `docker` CLI for integration tests.
 
    You may have noticed the following message when starting the container with the `shell` command:
@@ -242,7 +242,7 @@ can take over 15 minutes to complete.
    ```
 
     This Docker CLI should be built from the [docker-ce
-    project](https://github.com/docker/docker-ce) and needs to be a Linux
+    project](https://github.com/demonoid81/moby-ce) and needs to be a Linux
     binary.
 
    Inside the container you are running a development version. This is the version
@@ -292,7 +292,7 @@ you have:
 Running the `make BIND_DIR=. shell` command mounted your local Docker repository source into
 your Docker container.
 
-   > **Note**: Inspecting the `Dockerfile` shows a `COPY . /go/src/github.com/docker/docker` instruction, suggesting that dynamic code changes will _not_ be reflected in the container. However inspecting the `Makefile` shows that the current working directory _will_ be mounted via a `-v` volume mount.
+   > **Note**: Inspecting the `Dockerfile` shows a `COPY . /go/src/github.com/demonoid81/moby` instruction, suggesting that dynamic code changes will _not_ be reflected in the container. However inspecting the `Makefile` shows that the current working directory _will_ be mounted via a `-v` volume mount.
 
 When you start to develop code though, you'll
 want to iterate code changes and builds inside the container. If you have

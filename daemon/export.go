@@ -1,14 +1,14 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"fmt"
 	"io"
 
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/archive"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/system"
 )
 
 // ContainerExport writes the contents of the container to the given

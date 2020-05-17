@@ -1,13 +1,13 @@
-package graphdriver // import "github.com/docker/docker/daemon/graphdriver"
+package graphdriver // import "github.com/demonoid81/moby/daemon/graphdriver"
 
 import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/pkg/plugins"
-	v2 "github.com/docker/docker/plugin/v2"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/plugingetter"
+	"github.com/demonoid81/moby/pkg/plugins"
+	v2 "github.com/demonoid81/moby/plugin/v2"
 	"github.com/pkg/errors"
 )
 

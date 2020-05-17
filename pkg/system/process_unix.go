@@ -1,6 +1,6 @@
 // +build linux freebsd darwin
 
-package system // import "github.com/docker/docker/pkg/system"
+package system // import "github.com/demonoid81/moby/pkg/system"
 
 import (
 	"fmt"

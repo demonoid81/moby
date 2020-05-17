@@ -1,4 +1,4 @@
-package mount // import "github.com/docker/docker/api/types/mount"
+package mount // import "github.com/demonoid81/moby/api/types/mount"
 
 import (
 	"os"

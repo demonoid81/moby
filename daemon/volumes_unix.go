@@ -1,6 +1,6 @@
 // +build !windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"fmt"
@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	mounttypes "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/pkg/fileutils"
-	volumemounts "github.com/docker/docker/volume/mounts"
+	mounttypes "github.com/demonoid81/moby/api/types/mount"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/pkg/fileutils"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
 	"github.com/moby/sys/mount"
 )
 

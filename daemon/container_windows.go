@@ -1,7 +1,7 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
-	"github.com/docker/docker/container"
+	"github.com/demonoid81/moby/container"
 )
 
 func (daemon *Daemon) saveAppArmorConfig(container *container.Container) error {

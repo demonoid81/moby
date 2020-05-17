@@ -1,4 +1,4 @@
-package git // import "github.com/docker/docker/builder/remotecontext/git"
+package git // import "github.com/demonoid81/moby/builder/remotecontext/git"
 
 import (
 	"io/ioutil"
@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/pkg/symlink"
+	"github.com/demonoid81/moby/pkg/symlink"
 	"github.com/pkg/errors"
 )
 

@@ -1,12 +1,12 @@
 // +build linux
 
-package seccomp // import "github.com/docker/docker/profiles/seccomp"
+package seccomp // import "github.com/demonoid81/moby/profiles/seccomp"
 
 import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/docker/docker/oci"
+	"github.com/demonoid81/moby/oci"
 )
 
 func TestLoadProfile(t *testing.T) {

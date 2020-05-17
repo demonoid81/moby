@@ -1,10 +1,10 @@
-package httputils // import "github.com/docker/docker/api/server/httputils"
+package httputils // import "github.com/demonoid81/moby/api/server/httputils"
 
 import (
 	"io"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/network"
+	"github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/api/types/network"
 )
 
 // ContainerDecoder specifies how

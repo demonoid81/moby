@@ -1,9 +1,9 @@
-package discovery // import "github.com/docker/docker/pkg/discovery"
+package discovery // import "github.com/demonoid81/moby/pkg/discovery"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/internal/test/suite"
+	"github.com/demonoid81/moby/internal/test/suite"
 	"gotest.tools/v3/assert"
 )
 

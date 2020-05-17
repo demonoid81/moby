@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/integration-cli/daemon"
+package daemon // import "github.com/demonoid81/moby/integration-cli/daemon"
 
 import (
 	"context"
@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/client"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	"github.com/demonoid81/moby/api/types/swarm"
+	"github.com/demonoid81/moby/client"
 	"gotest.tools/v3/assert"
 )
 

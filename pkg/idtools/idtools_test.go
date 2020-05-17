@@ -1,4 +1,4 @@
-package idtools // import "github.com/docker/docker/pkg/idtools"
+package idtools // import "github.com/demonoid81/moby/pkg/idtools"
 
 import (
 	"testing"

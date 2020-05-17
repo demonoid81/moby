@@ -1,6 +1,6 @@
 // +build linux freebsd
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
@@ -11,13 +11,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/links"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/runconfig"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/links"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/pkg/system"
+	"github.com/demonoid81/moby/runconfig"
 	"github.com/docker/libnetwork"
 	"github.com/moby/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"

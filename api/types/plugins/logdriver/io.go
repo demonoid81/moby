@@ -1,4 +1,4 @@
-package logdriver // import "github.com/docker/docker/api/types/plugins/logdriver"
+package logdriver // import "github.com/demonoid81/moby/api/types/plugins/logdriver"
 
 import (
 	"encoding/binary"

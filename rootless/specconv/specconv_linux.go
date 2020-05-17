@@ -1,4 +1,4 @@
-package specconv // import "github.com/docker/docker/rootless/specconv"
+package specconv // import "github.com/demonoid81/moby/rootless/specconv"
 
 import (
 	"io/ioutil"

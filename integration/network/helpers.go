@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/pkg/parsers/kernel"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/client"
+	"github.com/demonoid81/moby/pkg/parsers/kernel"
 	"gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/icmd"
 )

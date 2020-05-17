@@ -1,4 +1,4 @@
-package parsers // import "github.com/docker/docker/pkg/parsers"
+package parsers // import "github.com/demonoid81/moby/pkg/parsers"
 
 import (
 	"reflect"

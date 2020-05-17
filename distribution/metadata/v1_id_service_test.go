@@ -1,11 +1,11 @@
-package metadata // import "github.com/docker/docker/distribution/metadata"
+package metadata // import "github.com/demonoid81/moby/distribution/metadata"
 
 import (
 	"io/ioutil"
 	"os"
 	"testing"
 
-	"github.com/docker/docker/layer"
+	"github.com/demonoid81/moby/layer"
 	"gotest.tools/v3/assert"
 )
 

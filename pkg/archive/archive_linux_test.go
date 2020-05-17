@@ -1,4 +1,4 @@
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/demonoid81/moby/pkg/archive"
 
 import (
 	"fmt"
@@ -9,8 +9,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/docker/docker/pkg/reexec"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/pkg/reexec"
+	"github.com/demonoid81/moby/pkg/system"
 	"github.com/moby/sys/mount"
 	rsystem "github.com/opencontainers/runc/libcontainer/system"
 	"github.com/pkg/errors"

@@ -1,4 +1,4 @@
-package resumable // import "github.com/docker/docker/registry/resumable"
+package resumable // import "github.com/demonoid81/moby/registry/resumable"
 
 import (
 	"fmt"

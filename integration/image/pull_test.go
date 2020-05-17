@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/versions"
+	"github.com/demonoid81/moby/errdefs"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

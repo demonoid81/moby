@@ -6,7 +6,7 @@
 // convert ANSI sequences to / from Windows Console API calls.
 //
 // Deprecated: use github.com/moby/term/windows instead
-package windowsconsole // import "github.com/docker/docker/pkg/term/windows"
+package windowsconsole // import "github.com/demonoid81/moby/pkg/term/windows"
 
 import (
 	windowsconsole "github.com/moby/term/windows"

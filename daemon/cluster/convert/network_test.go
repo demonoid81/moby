@@ -1,4 +1,4 @@
-package convert // import "github.com/docker/docker/daemon/cluster/convert"
+package convert // import "github.com/demonoid81/moby/daemon/cluster/convert"
 
 import (
 	"testing"

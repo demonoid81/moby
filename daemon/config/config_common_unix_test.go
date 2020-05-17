@@ -1,11 +1,11 @@
 // +build !windows
 
-package config // import "github.com/docker/docker/daemon/config"
+package config // import "github.com/demonoid81/moby/daemon/config"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types"
+	"github.com/demonoid81/moby/api/types"
 )
 
 func TestCommonUnixValidateConfigurationErrors(t *testing.T) {

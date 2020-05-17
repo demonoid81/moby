@@ -1,12 +1,12 @@
-package image // import "github.com/docker/docker/integration/image"
+package image // import "github.com/demonoid81/moby/integration/image"
 
 import (
 	"context"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/integration/internal/container"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/versions"
+	"github.com/demonoid81/moby/integration/internal/container"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

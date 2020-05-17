@@ -1,14 +1,14 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	eventtypes "github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/events"
+	"github.com/demonoid81/moby/api/types"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	eventtypes "github.com/demonoid81/moby/api/types/events"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/events"
 )
 
 func reset(c *container.Container) {

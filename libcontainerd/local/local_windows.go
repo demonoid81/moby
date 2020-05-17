@@ -1,4 +1,4 @@
-package local // import "github.com/docker/docker/libcontainerd/local"
+package local // import "github.com/demonoid81/moby/libcontainerd/local"
 
 // This package contains the legacy in-proc calls in HCS using the v1 schema
 // for Windows runtime purposes.
@@ -23,11 +23,11 @@ import (
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/cio"
 
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/libcontainerd/queue"
-	libcontainerdtypes "github.com/docker/docker/libcontainerd/types"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/libcontainerd/queue"
+	libcontainerdtypes "github.com/demonoid81/moby/libcontainerd/types"
+	"github.com/demonoid81/moby/pkg/sysinfo"
+	"github.com/demonoid81/moby/pkg/system"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

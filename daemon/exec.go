@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/strslice"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/container/stream"
-	"github.com/docker/docker/daemon/exec"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/pools"
-	"github.com/docker/docker/pkg/signal"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/strslice"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/container/stream"
+	"github.com/demonoid81/moby/daemon/exec"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/pools"
+	"github.com/demonoid81/moby/pkg/signal"
 	"github.com/moby/term"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"

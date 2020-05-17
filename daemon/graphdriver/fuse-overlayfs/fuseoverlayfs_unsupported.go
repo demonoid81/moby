@@ -1,3 +1,3 @@
 // +build !linux
 
-package fuseoverlayfs // import "github.com/docker/docker/daemon/graphdriver/fuse-overlayfs"
+package fuseoverlayfs // import "github.com/demonoid81/moby/daemon/graphdriver/fuse-overlayfs"

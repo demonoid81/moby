@@ -1,11 +1,11 @@
-package cluster // import "github.com/docker/docker/daemon/cluster"
+package cluster // import "github.com/demonoid81/moby/daemon/cluster"
 
 import (
 	"context"
 
-	apitypes "github.com/docker/docker/api/types"
-	types "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/cluster/convert"
+	apitypes "github.com/demonoid81/moby/api/types"
+	types "github.com/demonoid81/moby/api/types/swarm"
+	"github.com/demonoid81/moby/daemon/cluster/convert"
 	swarmapi "github.com/docker/swarmkit/api"
 	"google.golang.org/grpc"
 )

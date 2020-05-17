@@ -1,11 +1,11 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
 	"net/url"
 	"time"
 
-	timetypes "github.com/docker/docker/api/types/time"
+	timetypes "github.com/demonoid81/moby/api/types/time"
 )
 
 // ContainerStop stops a container. In case the container fails to stop

@@ -1,11 +1,11 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/discovery"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/daemon/discovery"
 	"github.com/sirupsen/logrus"
 )
 

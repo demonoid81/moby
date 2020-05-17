@@ -1,6 +1,6 @@
 // +build linux freebsd
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"bufio"
@@ -18,23 +18,23 @@ import (
 
 	statsV1 "github.com/containerd/cgroups/stats/v1"
 	statsV2 "github.com/containerd/cgroups/v2/stats"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/blkiodev"
-	pblkiodev "github.com/docker/docker/api/types/blkiodev"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/initlayer"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/parsers"
-	"github.com/docker/docker/pkg/parsers/kernel"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/runconfig"
-	volumemounts "github.com/docker/docker/volume/mounts"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/blkiodev"
+	pblkiodev "github.com/demonoid81/moby/api/types/blkiodev"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/daemon/initlayer"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/opts"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/parsers"
+	"github.com/demonoid81/moby/pkg/parsers/kernel"
+	"github.com/demonoid81/moby/pkg/sysinfo"
+	"github.com/demonoid81/moby/runconfig"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
 	"github.com/docker/libnetwork"
 	nwconfig "github.com/docker/libnetwork/config"
 	"github.com/docker/libnetwork/drivers/bridge"
@@ -319,7 +319,7 @@ func checkKernel() error {
 	// Unfortunately we can't test for the feature "does not cause a kernel panic"
 	// without actually causing a kernel panic, so we need this workaround until
 	// the circumstances of pre-3.10 crashes are clearer.
-	// For details see https://github.com/docker/docker/issues/407
+	// For details see https://github.com/demonoid81/moby/issues/407
 	// Docker 1.11 and above doesn't actually run on kernels older than 3.4,
 	// due to containerd-shim usage of PR_SET_CHILD_SUBREAPER (introduced in 3.4).
 	if !kernel.CheckKernelVersion(3, 10, 0) {

@@ -1,4 +1,4 @@
-package request // import "github.com/docker/docker/testutil/request"
+package request // import "github.com/demonoid81/moby/testutil/request"
 
 import (
 	"context"
@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/testutil/environment"
+	"github.com/demonoid81/moby/client"
+	"github.com/demonoid81/moby/opts"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/testutil/environment"
 	"github.com/docker/go-connections/sockets"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/pkg/errors"

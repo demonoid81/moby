@@ -1,4 +1,4 @@
-package api // import "github.com/docker/docker/api"
+package api // import "github.com/demonoid81/moby/api"
 
 // Common constants for daemon and client.
 const (

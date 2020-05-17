@@ -1,4 +1,4 @@
-package supervisor // import "github.com/docker/docker/libcontainerd/supervisor"
+package supervisor // import "github.com/demonoid81/moby/libcontainerd/supervisor"
 
 import (
 	"os"
@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/defaults"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/pkg/system"
 )
 
 const (

@@ -1,13 +1,13 @@
 // +build !linux
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
 
 	"github.com/containerd/containerd/containers"
 	coci "github.com/containerd/containerd/oci"
-	"github.com/docker/docker/container"
+	"github.com/demonoid81/moby/container"
 )
 
 const supportsSeccomp = false

@@ -1,4 +1,4 @@
-package v2 // import "github.com/docker/docker/plugin/v2"
+package v2 // import "github.com/demonoid81/moby/plugin/v2"
 
 import (
 	"os"
@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/oci"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/oci"
+	"github.com/demonoid81/moby/pkg/system"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 )

@@ -3,7 +3,7 @@
 //
 // In implementing the various functions of the daemon, there is often
 // a method-specific struct for configuring the runtime behavior.
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/pkg/fileutils"
+	"github.com/demonoid81/moby/pkg/fileutils"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/backoff"
 
@@ -27,44 +27,44 @@ import (
 	"github.com/containerd/containerd/defaults"
 	"github.com/containerd/containerd/pkg/dialer"
 	"github.com/containerd/containerd/remotes/docker"
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/discovery"
-	"github.com/docker/docker/daemon/events"
-	"github.com/docker/docker/daemon/exec"
-	"github.com/docker/docker/daemon/images"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/types"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/api/types/swarm"
+	"github.com/demonoid81/moby/builder"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/daemon/discovery"
+	"github.com/demonoid81/moby/daemon/events"
+	"github.com/demonoid81/moby/daemon/exec"
+	"github.com/demonoid81/moby/daemon/images"
+	"github.com/demonoid81/moby/daemon/logger"
+	"github.com/demonoid81/moby/daemon/network"
+	"github.com/demonoid81/moby/errdefs"
 	bkconfig "github.com/moby/buildkit/cmd/buildkitd/config"
 	"github.com/moby/buildkit/util/resolver"
 	rsystem "github.com/opencontainers/runc/libcontainer/system"
 	"github.com/sirupsen/logrus"
 
 	// register graph drivers
-	_ "github.com/docker/docker/daemon/graphdriver/register"
-	"github.com/docker/docker/daemon/stats"
-	dmetadata "github.com/docker/docker/distribution/metadata"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/libcontainerd"
-	libcontainerdtypes "github.com/docker/docker/libcontainerd/types"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/locker"
-	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/pkg/truncindex"
-	"github.com/docker/docker/plugin"
-	pluginexec "github.com/docker/docker/plugin/executor/containerd"
-	refstore "github.com/docker/docker/reference"
-	"github.com/docker/docker/registry"
-	"github.com/docker/docker/runconfig"
-	volumesservice "github.com/docker/docker/volume/service"
+	_ "github.com/demonoid81/moby/daemon/graphdriver/register"
+	"github.com/demonoid81/moby/daemon/stats"
+	dmetadata "github.com/demonoid81/moby/distribution/metadata"
+	"github.com/demonoid81/moby/dockerversion"
+	"github.com/demonoid81/moby/image"
+	"github.com/demonoid81/moby/layer"
+	"github.com/demonoid81/moby/libcontainerd"
+	libcontainerdtypes "github.com/demonoid81/moby/libcontainerd/types"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/locker"
+	"github.com/demonoid81/moby/pkg/plugingetter"
+	"github.com/demonoid81/moby/pkg/system"
+	"github.com/demonoid81/moby/pkg/truncindex"
+	"github.com/demonoid81/moby/plugin"
+	pluginexec "github.com/demonoid81/moby/plugin/executor/containerd"
+	refstore "github.com/demonoid81/moby/reference"
+	"github.com/demonoid81/moby/registry"
+	"github.com/demonoid81/moby/runconfig"
+	volumesservice "github.com/demonoid81/moby/volume/service"
 	"github.com/docker/libnetwork"
 	"github.com/docker/libnetwork/cluster"
 	nwconfig "github.com/docker/libnetwork/config"
@@ -280,7 +280,7 @@ func (daemon *Daemon) restore() error {
 
 			// The LogConfig.Type is empty if the container was created before docker 1.12 with default log driver.
 			// We should rewrite it to use the daemon defaults.
-			// Fixes https://github.com/docker/docker/issues/22536
+			// Fixes https://github.com/demonoid81/moby/issues/22536
 			if c.HostConfig.LogConfig.Type == "" {
 				if err := daemon.mergeAndVerifyLogConfig(&c.HostConfig.LogConfig); err != nil {
 					logrus.Errorf("Failed to verify log config for container %s: %q", c.ID, err)

@@ -1,8 +1,8 @@
 // +build windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
-import "github.com/docker/docker/pkg/plugingetter"
+import "github.com/demonoid81/moby/pkg/plugingetter"
 
 func registerMetricsPluginCallback(getter plugingetter.PluginGetter, sockPath string) {
 }

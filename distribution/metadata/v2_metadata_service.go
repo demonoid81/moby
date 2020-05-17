@@ -1,4 +1,4 @@
-package metadata // import "github.com/docker/docker/distribution/metadata"
+package metadata // import "github.com/demonoid81/moby/distribution/metadata"
 
 import (
 	"crypto/hmac"
@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/layer"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/layer"
 	digest "github.com/opencontainers/go-digest"
 )
 

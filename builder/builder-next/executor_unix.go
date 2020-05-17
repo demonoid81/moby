@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/demonoid81/moby/daemon/config"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/stringid"
 	"github.com/docker/libnetwork"
 	"github.com/moby/buildkit/executor"
 	"github.com/moby/buildkit/executor/oci"

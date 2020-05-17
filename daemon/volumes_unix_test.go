@@ -1,6 +1,6 @@
 // +build !windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"encoding/json"
@@ -8,10 +8,10 @@ import (
 	"reflect"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/container"
-	volumemounts "github.com/docker/docker/volume/mounts"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	mounttypes "github.com/demonoid81/moby/api/types/mount"
+	"github.com/demonoid81/moby/container"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
 )
 
 func TestBackportMountSpec(t *testing.T) {

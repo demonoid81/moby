@@ -1,10 +1,10 @@
-package router // import "github.com/docker/docker/api/server/router"
+package router // import "github.com/demonoid81/moby/api/server/router"
 
 import (
 	"context"
 	"net/http"
 
-	"github.com/docker/docker/api/server/httputils"
+	"github.com/demonoid81/moby/api/server/httputils"
 )
 
 // ExperimentalRoute defines an experimental API route that can be enabled or disabled.

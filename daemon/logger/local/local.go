@@ -1,4 +1,4 @@
-package local // import "github.com/docker/docker/daemon/logger/local"
+package local // import "github.com/demonoid81/moby/daemon/logger/local"
 
 import (
 	"encoding/binary"
@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/plugins/logdriver"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/loggerutils"
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/api/types/backend"
+	"github.com/demonoid81/moby/api/types/plugins/logdriver"
+	"github.com/demonoid81/moby/daemon/logger"
+	"github.com/demonoid81/moby/daemon/logger/loggerutils"
+	"github.com/demonoid81/moby/errdefs"
 	units "github.com/docker/go-units"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

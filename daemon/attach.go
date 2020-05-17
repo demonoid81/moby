@@ -1,16 +1,16 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"context"
 	"fmt"
 	"io"
 
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/container/stream"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/stdcopy"
+	"github.com/demonoid81/moby/api/types/backend"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/container/stream"
+	"github.com/demonoid81/moby/daemon/logger"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/stdcopy"
 	"github.com/moby/term"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

@@ -1,4 +1,4 @@
-package plugin // import "github.com/docker/docker/plugin"
+package plugin // import "github.com/demonoid81/moby/plugin"
 
 import (
 	"context"
@@ -9,14 +9,14 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/content"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/daemon/initlayer"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/plugins"
-	"github.com/docker/docker/pkg/stringid"
-	v2 "github.com/docker/docker/plugin/v2"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/daemon/initlayer"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/plugins"
+	"github.com/demonoid81/moby/pkg/stringid"
+	v2 "github.com/demonoid81/moby/plugin/v2"
 	"github.com/moby/sys/mount"
 	digest "github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"

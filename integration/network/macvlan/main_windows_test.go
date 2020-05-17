@@ -1,1 +1,1 @@
-package macvlan // import "github.com/docker/docker/integration/network/macvlan"
+package macvlan // import "github.com/demonoid81/moby/integration/network/macvlan"

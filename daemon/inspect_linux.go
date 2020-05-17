@@ -1,11 +1,11 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/versions/v1p19"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/exec"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/backend"
+	"github.com/demonoid81/moby/api/types/versions/v1p19"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/daemon/exec"
 )
 
 // This sets platform-specific fields

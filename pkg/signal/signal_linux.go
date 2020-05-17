@@ -1,6 +1,6 @@
 // +build !mips,!mipsle,!mips64,!mips64le
 
-package signal // import "github.com/docker/docker/pkg/signal"
+package signal // import "github.com/demonoid81/moby/pkg/signal"
 
 import (
 	"syscall"

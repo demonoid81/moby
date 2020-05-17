@@ -1,6 +1,6 @@
 // +build linux
 
-package quota // import "github.com/docker/docker/daemon/graphdriver/quota"
+package quota // import "github.com/demonoid81/moby/daemon/graphdriver/quota"
 
 import "sync"
 

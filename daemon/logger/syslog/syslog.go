@@ -1,5 +1,5 @@
 // Package syslog provides the logdriver for forwarding server logs to syslog endpoints.
-package syslog // import "github.com/docker/docker/daemon/logger/syslog"
+package syslog // import "github.com/demonoid81/moby/daemon/logger/syslog"
 
 import (
 	"crypto/tls"
@@ -14,9 +14,9 @@ import (
 
 	syslog "github.com/RackSec/srslog"
 
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/loggerutils"
-	"github.com/docker/docker/pkg/urlutil"
+	"github.com/demonoid81/moby/daemon/logger"
+	"github.com/demonoid81/moby/daemon/logger/loggerutils"
+	"github.com/demonoid81/moby/pkg/urlutil"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/sirupsen/logrus"
 )

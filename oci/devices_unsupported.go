@@ -1,6 +1,6 @@
 // +build !linux
 
-package oci // import "github.com/docker/docker/oci"
+package oci // import "github.com/demonoid81/moby/oci"
 
 import (
 	"errors"

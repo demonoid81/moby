@@ -1,4 +1,4 @@
-package containerfs // import "github.com/docker/docker/pkg/containerfs"
+package containerfs // import "github.com/demonoid81/moby/pkg/containerfs"
 
 import "path/filepath"
 

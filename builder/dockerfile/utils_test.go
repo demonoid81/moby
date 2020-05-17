@@ -1,4 +1,4 @@
-package dockerfile // import "github.com/docker/docker/builder/dockerfile"
+package dockerfile // import "github.com/demonoid81/moby/builder/dockerfile"
 
 import (
 	"io/ioutil"

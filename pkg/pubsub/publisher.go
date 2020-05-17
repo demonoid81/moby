@@ -1,4 +1,4 @@
-package pubsub // import "github.com/docker/docker/pkg/pubsub"
+package pubsub // import "github.com/demonoid81/moby/pkg/pubsub"
 
 import (
 	"sync"

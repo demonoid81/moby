@@ -1,4 +1,4 @@
-package volume // import "github.com/docker/docker/api/server/router/volume"
+package volume // import "github.com/demonoid81/moby/api/server/router/volume"
 
 import (
 	"context"
@@ -6,11 +6,11 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types/filters"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/volume/service/opts"
+	"github.com/demonoid81/moby/api/server/httputils"
+	"github.com/demonoid81/moby/api/types/filters"
+	volumetypes "github.com/demonoid81/moby/api/types/volume"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/volume/service/opts"
 	"github.com/pkg/errors"
 )
 

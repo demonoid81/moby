@@ -1,4 +1,4 @@
-package broadcaster // import "github.com/docker/docker/pkg/broadcaster"
+package broadcaster // import "github.com/demonoid81/moby/pkg/broadcaster"
 
 import (
 	"io"

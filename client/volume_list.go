@@ -1,12 +1,12 @@
-package client // import "github.com/docker/docker/client"
+package client // import "github.com/demonoid81/moby/client"
 
 import (
 	"context"
 	"encoding/json"
 	"net/url"
 
-	"github.com/docker/docker/api/types/filters"
-	volumetypes "github.com/docker/docker/api/types/volume"
+	"github.com/demonoid81/moby/api/types/filters"
+	volumetypes "github.com/demonoid81/moby/api/types/volume"
 )
 
 // VolumeList returns the volumes configured in the docker host.

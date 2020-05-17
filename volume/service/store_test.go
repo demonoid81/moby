@@ -1,4 +1,4 @@
-package service // import "github.com/docker/docker/volume/service"
+package service // import "github.com/demonoid81/moby/volume/service"
 
 import (
 	"context"
@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/volume"
-	volumedrivers "github.com/docker/docker/volume/drivers"
-	"github.com/docker/docker/volume/service/opts"
-	volumetestutils "github.com/docker/docker/volume/testutils"
+	"github.com/demonoid81/moby/volume"
+	volumedrivers "github.com/demonoid81/moby/volume/drivers"
+	"github.com/demonoid81/moby/volume/service/opts"
+	volumetestutils "github.com/demonoid81/moby/volume/testutils"
 	"github.com/google/go-cmp/cmp"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

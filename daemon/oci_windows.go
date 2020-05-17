@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"encoding/json"
@@ -9,13 +9,13 @@ import (
 	"strings"
 
 	"github.com/Microsoft/hcsshim/osversion"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/oci"
-	"github.com/docker/docker/oci/caps"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/pkg/system"
+	containertypes "github.com/demonoid81/moby/api/types/container"
+	"github.com/demonoid81/moby/container"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/oci"
+	"github.com/demonoid81/moby/oci/caps"
+	"github.com/demonoid81/moby/pkg/sysinfo"
+	"github.com/demonoid81/moby/pkg/system"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"

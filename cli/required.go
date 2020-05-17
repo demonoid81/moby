@@ -1,4 +1,4 @@
-package cli // import "github.com/docker/docker/cli"
+package cli // import "github.com/demonoid81/moby/cli"
 
 import (
 	"strings"

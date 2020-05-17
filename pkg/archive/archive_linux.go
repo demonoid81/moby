@@ -1,4 +1,4 @@
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/demonoid81/moby/pkg/archive"
 
 import (
 	"archive/tar"
@@ -10,7 +10,7 @@ import (
 	"syscall"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/pkg/system"
 	"github.com/moby/sys/mount"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"

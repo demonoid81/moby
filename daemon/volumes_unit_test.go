@@ -1,10 +1,10 @@
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"runtime"
 	"testing"
 
-	volumemounts "github.com/docker/docker/volume/mounts"
+	volumemounts "github.com/demonoid81/moby/volume/mounts"
 )
 
 func TestParseVolumesFrom(t *testing.T) {

@@ -1,10 +1,10 @@
-package cluster // import "github.com/docker/docker/daemon/cluster"
+package cluster // import "github.com/demonoid81/moby/daemon/cluster"
 
 import (
 	"context"
 	"fmt"
 
-	"github.com/docker/docker/errdefs"
+	"github.com/demonoid81/moby/errdefs"
 	swarmapi "github.com/docker/swarmkit/api"
 	"github.com/pkg/errors"
 )

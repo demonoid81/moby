@@ -1,9 +1,9 @@
-package archive // import "github.com/docker/docker/pkg/archive"
+package archive // import "github.com/demonoid81/moby/pkg/archive"
 
 import (
 	"os"
 
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/pkg/system"
 )
 
 func statDifferent(oldStat *system.StatT, newStat *system.StatT) bool {

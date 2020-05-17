@@ -4,7 +4,7 @@
 
 // This code is a modified version of path/filepath/symlink.go from the Go standard library.
 
-package symlink // import "github.com/docker/docker/pkg/symlink"
+package symlink // import "github.com/demonoid81/moby/pkg/symlink"
 
 import (
 	"bytes"

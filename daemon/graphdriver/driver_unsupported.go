@@ -1,6 +1,6 @@
 // +build !linux,!windows,!freebsd
 
-package graphdriver // import "github.com/docker/docker/daemon/graphdriver"
+package graphdriver // import "github.com/demonoid81/moby/daemon/graphdriver"
 
 var (
 	// List of drivers that should be used in an order

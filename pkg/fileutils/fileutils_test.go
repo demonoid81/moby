@@ -1,4 +1,4 @@
-package fileutils // import "github.com/docker/docker/pkg/fileutils"
+package fileutils // import "github.com/demonoid81/moby/pkg/fileutils"
 
 import (
 	"fmt"

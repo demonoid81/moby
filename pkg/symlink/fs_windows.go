@@ -1,4 +1,4 @@
-package symlink // import "github.com/docker/docker/pkg/symlink"
+package symlink // import "github.com/demonoid81/moby/pkg/symlink"
 
 import (
 	"bytes"

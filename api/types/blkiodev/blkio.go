@@ -1,4 +1,4 @@
-package blkiodev // import "github.com/docker/docker/api/types/blkiodev"
+package blkiodev // import "github.com/demonoid81/moby/api/types/blkiodev"
 
 import "fmt"
 

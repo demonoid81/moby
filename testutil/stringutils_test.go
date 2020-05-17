@@ -1,4 +1,4 @@
-package testutil // import "github.com/docker/docker/testutil"
+package testutil // import "github.com/demonoid81/moby/testutil"
 
 import (
 	"testing"

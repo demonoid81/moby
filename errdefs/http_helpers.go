@@ -1,4 +1,4 @@
-package errdefs // import "github.com/docker/docker/errdefs"
+package errdefs // import "github.com/demonoid81/moby/errdefs"
 
 import (
 	"fmt"

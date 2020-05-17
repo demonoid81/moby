@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/demonoid81/moby/daemon/images"
 
 import (
 	"context"
@@ -8,12 +8,12 @@ import (
 
 	dist "github.com/docker/distribution"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/distribution"
-	progressutils "github.com/docker/docker/distribution/utils"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/registry"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/distribution"
+	progressutils "github.com/demonoid81/moby/distribution/utils"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/pkg/progress"
+	"github.com/demonoid81/moby/registry"
 	digest "github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )

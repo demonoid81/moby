@@ -1,6 +1,6 @@
 // +build linux
 
-package copy // import "github.com/docker/docker/daemon/graphdriver/copy"
+package copy // import "github.com/demonoid81/moby/daemon/graphdriver/copy"
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/pkg/system"
+	"github.com/demonoid81/moby/pkg/system"
 	"golang.org/x/sys/unix"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

@@ -1,4 +1,4 @@
-package image // import "github.com/docker/docker/integration/image"
+package image // import "github.com/demonoid81/moby/integration/image"
 
 import (
 	"archive/tar"
@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/testutil"
-	"github.com/docker/docker/testutil/daemon"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/testutil"
+	"github.com/demonoid81/moby/testutil/daemon"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/skip"
 )

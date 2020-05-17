@@ -1,6 +1,6 @@
 // +build linux
 
-package devmapper // import "github.com/docker/docker/daemon/graphdriver/devmapper"
+package devmapper // import "github.com/demonoid81/moby/daemon/graphdriver/devmapper"
 
 import (
 	"bufio"
@@ -18,14 +18,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/pkg/devicemapper"
-	"github.com/docker/docker/pkg/dmesg"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/loopback"
-	"github.com/docker/docker/pkg/parsers"
-	"github.com/docker/docker/pkg/parsers/kernel"
+	"github.com/demonoid81/moby/daemon/graphdriver"
+	"github.com/demonoid81/moby/dockerversion"
+	"github.com/demonoid81/moby/pkg/devicemapper"
+	"github.com/demonoid81/moby/pkg/dmesg"
+	"github.com/demonoid81/moby/pkg/idtools"
+	"github.com/demonoid81/moby/pkg/loopback"
+	"github.com/demonoid81/moby/pkg/parsers"
+	"github.com/demonoid81/moby/pkg/parsers/kernel"
 	units "github.com/docker/go-units"
 	"github.com/moby/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
@@ -1679,7 +1679,7 @@ func (devices *DeviceSet) initDevmapper(doInit bool) (retErr error) {
 
 	logger := logrus.WithField("storage-driver", "devicemapper")
 
-	// https://github.com/docker/docker/issues/4036
+	// https://github.com/demonoid81/moby/issues/4036
 	if supported := devicemapper.UdevSetSyncSupport(true); !supported {
 		if dockerversion.IAmStatic == "true" {
 			logger.Error("Udev sync is not supported. This will lead to data loss and unexpected behavior. Install a dynamic binary to use devicemapper or select a different storage driver. For more information, see https://docs.docker.com/engine/reference/commandline/dockerd/#storage-driver-options")

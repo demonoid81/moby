@@ -1,4 +1,4 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/demonoid81/moby/daemon/images"
 
 import (
 	"context"
@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	registrytypes "github.com/docker/docker/api/types/registry"
-	"github.com/docker/docker/registry"
+	"github.com/demonoid81/moby/api/types"
+	registrytypes "github.com/demonoid81/moby/api/types/registry"
+	"github.com/demonoid81/moby/registry"
 )
 
 type FakeService struct {

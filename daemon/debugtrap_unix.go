@@ -1,12 +1,12 @@
 // +build !windows
 
-package daemon // import "github.com/docker/docker/daemon"
+package daemon // import "github.com/demonoid81/moby/daemon"
 
 import (
 	"os"
 	"os/signal"
 
-	stackdump "github.com/docker/docker/pkg/signal"
+	stackdump "github.com/demonoid81/moby/pkg/signal"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 )

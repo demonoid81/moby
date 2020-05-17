@@ -1,11 +1,11 @@
-package config // import "github.com/docker/docker/integration/config"
+package config // import "github.com/demonoid81/moby/integration/config"
 
 import (
 	"fmt"
 	"os"
 	"testing"
 
-	"github.com/docker/docker/testutil/environment"
+	"github.com/demonoid81/moby/testutil/environment"
 )
 
 var testEnv *environment.Execution

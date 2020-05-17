@@ -1,4 +1,4 @@
-package plugin // import "github.com/docker/docker/testutil/fixtures/plugin"
+package plugin // import "github.com/demonoid81/moby/testutil/fixtures/plugin"
 
 import (
 	"context"
@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/plugin"
-	"github.com/docker/docker/registry"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/pkg/archive"
+	"github.com/demonoid81/moby/plugin"
+	"github.com/demonoid81/moby/registry"
 	"github.com/pkg/errors"
 )
 

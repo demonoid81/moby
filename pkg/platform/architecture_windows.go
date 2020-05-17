@@ -1,4 +1,4 @@
-package platform // import "github.com/docker/docker/pkg/platform"
+package platform // import "github.com/demonoid81/moby/pkg/platform"
 
 import (
 	"fmt"

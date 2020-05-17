@@ -1,4 +1,4 @@
-package authorization // import "github.com/docker/docker/pkg/authorization"
+package authorization // import "github.com/demonoid81/moby/pkg/authorization"
 
 import (
 	"bufio"
@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/ioutils"
 	"github.com/sirupsen/logrus"
 )
 

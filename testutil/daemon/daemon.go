@@ -1,4 +1,4 @@
-package daemon // import "github.com/docker/docker/testutil/daemon"
+package daemon // import "github.com/demonoid81/moby/testutil/daemon"
 
 import (
 	"context"
@@ -15,13 +15,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/testutil/request"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/events"
+	"github.com/demonoid81/moby/client"
+	"github.com/demonoid81/moby/opts"
+	"github.com/demonoid81/moby/pkg/ioutils"
+	"github.com/demonoid81/moby/pkg/stringid"
+	"github.com/demonoid81/moby/testutil/request"
 	"github.com/docker/go-connections/sockets"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/moby/sys/mount"

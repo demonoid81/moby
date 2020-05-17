@@ -1,14 +1,14 @@
-package v1 // import "github.com/docker/docker/image/v1"
+package v1 // import "github.com/demonoid81/moby/image/v1"
 
 import (
 	"encoding/json"
 	"reflect"
 	"strings"
 
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/demonoid81/moby/api/types/versions"
+	"github.com/demonoid81/moby/image"
+	"github.com/demonoid81/moby/layer"
+	"github.com/demonoid81/moby/pkg/stringid"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/sirupsen/logrus"
 )

@@ -1,4 +1,4 @@
-package git // import "github.com/docker/docker/builder/remotecontext/git"
+package git // import "github.com/demonoid81/moby/builder/remotecontext/git"
 
 import (
 	"fmt"
@@ -155,7 +155,7 @@ func TestCloneArgsDumbHttp(t *testing.T) {
 }
 
 func TestCloneArgsGit(t *testing.T) {
-	args := fetchArgs("git://github.com/docker/docker", "master")
+	args := fetchArgs("git://github.com/demonoid81/moby", "master")
 	exp := []string{"fetch", "--depth", "1", "origin", "--", "master"}
 	assert.Check(t, is.DeepEqual(exp, args))
 }
@@ -327,16 +327,16 @@ func TestCheckoutGit(t *testing.T) {
 
 func TestValidGitTransport(t *testing.T) {
 	gitUrls := []string{
-		"git://github.com/docker/docker",
+		"git://github.com/demonoid81/moby",
 		"git@github.com:docker/docker.git",
 		"git@bitbucket.org:atlassianlabs/atlassian-docker.git",
-		"https://github.com/docker/docker.git",
-		"http://github.com/docker/docker.git",
-		"http://github.com/docker/docker.git#branch",
-		"http://github.com/docker/docker.git#:dir",
+		"https://github.com/demonoid81/moby.git",
+		"http://github.com/demonoid81/moby.git",
+		"http://github.com/demonoid81/moby.git#branch",
+		"http://github.com/demonoid81/moby.git#:dir",
 	}
 	incompleteGitUrls := []string{
-		"github.com/docker/docker",
+		"github.com/demonoid81/moby",
 	}
 
 	for _, url := range gitUrls {

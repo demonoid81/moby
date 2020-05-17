@@ -1,10 +1,10 @@
-package nodes // import "github.com/docker/docker/pkg/discovery/nodes"
+package nodes // import "github.com/demonoid81/moby/pkg/discovery/nodes"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/internal/test/suite"
-	"github.com/docker/docker/pkg/discovery"
+	"github.com/demonoid81/moby/internal/test/suite"
+	"github.com/demonoid81/moby/pkg/discovery"
 	"gotest.tools/v3/assert"
 )
 

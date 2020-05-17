@@ -1,6 +1,6 @@
 // +build linux
 
-package devmapper // import "github.com/docker/docker/daemon/graphdriver/devmapper"
+package devmapper // import "github.com/demonoid81/moby/daemon/graphdriver/devmapper"
 
 import (
 	"bytes"

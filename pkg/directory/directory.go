@@ -1,4 +1,4 @@
-package directory // import "github.com/docker/docker/pkg/directory"
+package directory // import "github.com/demonoid81/moby/pkg/directory"
 
 import (
 	"io/ioutil"

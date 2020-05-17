@@ -1,4 +1,4 @@
-package common // import "github.com/docker/docker/integration/plugin/common"
+package common // import "github.com/demonoid81/moby/integration/plugin/common"
 
 import (
 	"context"
@@ -12,11 +12,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/testutil/daemon"
-	"github.com/docker/docker/testutil/fixtures/plugin"
-	"github.com/docker/docker/testutil/registry"
-	"github.com/docker/docker/testutil/request"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/testutil/daemon"
+	"github.com/demonoid81/moby/testutil/fixtures/plugin"
+	"github.com/demonoid81/moby/testutil/registry"
+	"github.com/demonoid81/moby/testutil/request"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

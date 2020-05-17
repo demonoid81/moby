@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/pkg/pubsub"
-	"github.com/docker/docker/pkg/tailfile"
+	"github.com/demonoid81/moby/daemon/logger"
+	"github.com/demonoid81/moby/pkg/pubsub"
+	"github.com/demonoid81/moby/pkg/tailfile"
 	"gotest.tools/v3/assert"
 )
 

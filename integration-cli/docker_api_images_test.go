@@ -10,13 +10,13 @@ import (
 	"testing"
 
 	"github.com/Microsoft/hcsshim/osversion"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/pkg/parsers/kernel"
-	"github.com/docker/docker/testutil/request"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	"github.com/demonoid81/moby/client"
+	"github.com/demonoid81/moby/integration-cli/cli"
+	"github.com/demonoid81/moby/integration-cli/cli/build"
+	"github.com/demonoid81/moby/pkg/parsers/kernel"
+	"github.com/demonoid81/moby/testutil/request"
 	"gotest.tools/v3/assert"
 )
 

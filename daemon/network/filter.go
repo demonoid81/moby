@@ -1,10 +1,10 @@
-package network // import "github.com/docker/docker/daemon/network"
+package network // import "github.com/demonoid81/moby/daemon/network"
 
 import (
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/errdefs"
-	"github.com/docker/docker/runconfig"
+	"github.com/demonoid81/moby/api/types"
+	"github.com/demonoid81/moby/api/types/filters"
+	"github.com/demonoid81/moby/errdefs"
+	"github.com/demonoid81/moby/runconfig"
 	"github.com/pkg/errors"
 )
 

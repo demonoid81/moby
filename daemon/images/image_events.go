@@ -1,7 +1,7 @@
-package images // import "github.com/docker/docker/daemon/images"
+package images // import "github.com/demonoid81/moby/daemon/images"
 
 import (
-	"github.com/docker/docker/api/types/events"
+	"github.com/demonoid81/moby/api/types/events"
 )
 
 // LogImageEvent generates an event related to an image with only the default attributes.

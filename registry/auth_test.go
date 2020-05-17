@@ -1,10 +1,10 @@
-package registry // import "github.com/docker/docker/registry"
+package registry // import "github.com/demonoid81/moby/registry"
 
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	registrytypes "github.com/docker/docker/api/types/registry"
+	"github.com/demonoid81/moby/api/types"
+	registrytypes "github.com/demonoid81/moby/api/types/registry"
 )
 
 func buildAuthConfigs() map[string]types.AuthConfig {

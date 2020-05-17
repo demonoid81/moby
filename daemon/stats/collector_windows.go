@@ -1,4 +1,4 @@
-package stats // import "github.com/docker/docker/daemon/stats"
+package stats // import "github.com/demonoid81/moby/daemon/stats"
 
 // platformNewStatsCollector performs platform specific initialisation of the
 // Collector structure. This is a no-op on Windows.

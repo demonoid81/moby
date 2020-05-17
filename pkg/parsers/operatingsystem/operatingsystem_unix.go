@@ -1,6 +1,6 @@
 // +build freebsd darwin
 
-package operatingsystem // import "github.com/docker/docker/pkg/parsers/operatingsystem"
+package operatingsystem // import "github.com/demonoid81/moby/pkg/parsers/operatingsystem"
 
 import (
 	"bytes"

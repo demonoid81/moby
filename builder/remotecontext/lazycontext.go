@@ -1,13 +1,13 @@
-package remotecontext // import "github.com/docker/docker/builder/remotecontext"
+package remotecontext // import "github.com/demonoid81/moby/builder/remotecontext"
 
 import (
 	"encoding/hex"
 	"os"
 	"strings"
 
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/containerfs"
-	"github.com/docker/docker/pkg/pools"
+	"github.com/demonoid81/moby/builder"
+	"github.com/demonoid81/moby/pkg/containerfs"
+	"github.com/demonoid81/moby/pkg/pools"
 	"github.com/pkg/errors"
 )
 
