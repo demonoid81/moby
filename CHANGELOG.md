@@ -768,7 +768,7 @@ systemctl restart docker` to reload changes and (re)start the docker daemon.
   * Allow encrypted networks when running docker inside a container [docker/libnetwork#1502](https://github.com/demonoid81/libnetwork/pull/1502)
   - Do not block autoallocation of IPv6 pool [docker/libnetwork#1538](https://github.com/demonoid81/libnetwork/pull/1538)
   - Set timeout for netlink calls [docker/libnetwork#1557](https://github.com/demonoid81/libnetwork/pull/1557)
-  - Increase networking local store timeout to one minute [docker/libkv#140](https://github.com/docker/libkv/pull/140)
+  - Increase networking local store timeout to one minute [docker/libkv#140](https://github.com/demonoid81/libkv/pull/140)
   - Fix a panic in libnetwork.(*sandbox).execFunc [docker/libnetwork#1556](https://github.com/demonoid81/libnetwork/pull/1556)
   - Honor icc=false for internal networks [docker/libnetwork#1525](https://github.com/demonoid81/libnetwork/pull/1525)
 

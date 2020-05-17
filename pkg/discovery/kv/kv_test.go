@@ -10,8 +10,8 @@ import (
 
 	"github.com/demonoid81/moby/internal/test/suite"
 	"github.com/demonoid81/moby/pkg/discovery"
-	"github.com/docker/libkv"
-	"github.com/docker/libkv/store"
+	"github.com/demonoid81/libkv"
+	"github.com/demonoid81/libkv/store"
 	"gotest.tools/v3/assert"
 )
 

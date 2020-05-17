@@ -8,11 +8,11 @@ import (
 
 	"github.com/demonoid81/moby/pkg/discovery"
 	"github.com/docker/go-connections/tlsconfig"
-	"github.com/docker/libkv"
-	"github.com/docker/libkv/store"
-	"github.com/docker/libkv/store/consul"
-	"github.com/docker/libkv/store/etcd"
-	"github.com/docker/libkv/store/zookeeper"
+	"github.com/demonoid81/libkv"
+	"github.com/demonoid81/libkv/store"
+	"github.com/demonoid81/libkv/store/consul"
+	"github.com/demonoid81/libkv/store/etcd"
+	"github.com/demonoid81/libkv/store/zookeeper"
 	"github.com/sirupsen/logrus"
 )
 
